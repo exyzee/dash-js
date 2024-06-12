@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Dash - Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Homepage -->
+    <div class="page" id="homepage">
+        <div class="header">
+            <div class="header-bg">
+                <h1>👋 Hi John,<br>Good Morning!</h1>
+            </div>
+            <button id="start-session-btn">
+                <img src="images/arrow.png" alt="Icon" class="button-icon"> Start A Session!
+            </button>
+        </div>
+        <div class="content">
+            <h2>Recent Activity</h2>
+            <div class="activity-list">
+                <div class="activity-item">
+                    <div class="emoji-box">🌊</div>
+                    <div class="activity-details">
+                        <div class="title-time">
+                            <h3>Calm Moods</h3>
+                            <span>3h ago</span>
+                        </div>
+                        <p>You spent 15 minutes listening to calm and soothing music.</p>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="emoji-box">🎯</div>
+                    <div class="activity-details">
+                        <div class="title-time">
+                            <h3>Focused Work</h3>
+                            <span>2h ago</span>
+                        </div>
+                        <p>You spent 20 minutes listening to focus-enhancing music.</p>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="emoji-box">🍃</div>
+                    <div class="activity-details">
+                        <div class="title-time">
+                            <h3>Gentle Relaxation</h3>
+                            <span>1h ago</span>
+                        </div>
+                        <p>You spent 30 minutes listening to relaxing nature sounds.</p>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="emoji-box">💨</div>
+                    <div class="activity-details">
+                        <div class="title-time">
+                            <h3>Peaceful Moment</h3>
+                            <span>45m ago</span>
+                        </div>
+                        <p>You spent 10 minutes listening to peace-inspiring melodies.</p>
+                    </div>
+                </div>
+                <div class="activity-item">
+                    <div class="emoji-box">🔥</div>
+                    <div class="activity-details">
+                        <div class="title-time">
+                            <h3>Motivational Boost</h3>
+                            <span>30m ago</span>
+                        </div>
+                        <p>You spent 15 minutes listening to motivational music.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detecting Page -->
+    <div class="page" id="detecting-page" style="display: none;">
+        <button id="back-btn-2">
+            <img src="images/back-icon.svg" alt="Back" class="back-icon">
+        </button>
+        <div class="detecting-content">
+            <h2>Detecting Environment...</h2>
+            <div class="loader-gif">
+                <img src="images/detection-animation.gif" alt="Loading...">
+            </div>
+            <button id="select-mood-btn" class="pill-btn">
+                <img src="images/mood-icon.svg" alt="Mood Icon" class="button-icon"> Select Mood
+            </button>
+        </div>
+    </div>
+
+    <!-- Detected Page -->
+    <div class="page" id="detected-page" style="display: none;">
+        <button id="back-btn-2">
+            <img src="images/back-icon.svg" alt="Back" class="back-icon">
+        </button>
+        <div class="detected-content">
+            <img src="images/suggestion.png" alt="Suggested Music" class="suggested-image">
+            <h2>Noisy Street Detected!</h2>
+            <h4>Suggested Music</h4>
+
+            <div class="suggested-music">
+                <button class="pill-btn">😌 Calm</button>
+                <button class="pill-btn">🎯 Focused</button>
+                <button class="pill-btn">🍃 Gentle Relaxation</button>
+                <button class="pill-btn">💨 Peace</button>
+            </div>
+            <button id="begin-session-btn" class="main-btn">
+                Begin Session &nbsp; <img src="images/chevron-right.svg" alt="Chevron" width="15px" height="15px">
+            </button>
+            <button id="select-mood-btn-2" class="secondary-btn">Select Mood</button>
+        </div>
+    </div>
+    <!-- Begin Session Page -->
+<div class="page" id="begin-session-page" style="display: none;">
+    <img src="/images/mockscreen.jpg" alt="Begin Session Image" class="full-screen-image" id="session-image">
+</div>
+
+
+    <!-- Feedback Page -->
+    <div class="page" id="feedback-page" style="display: none;">
+        <button id="back-btn-3">
+            <img src="images/back-icon.svg" alt="Back" class="back-icon">
+        </button>
+        <div class="feedback-content">
+            <!-- UI Design Image -->
+            <img src="images/feedback-mockui.jpg" alt="UI Design" class="ui-design-image">
+
+<!-- Feedback Textbox -->
+<div class="feedback-textbox">
+    <textarea id="feedback-textarea" placeholder="Tell us more about your experience!"></textarea>
+    <!-- Mic Icon -->
+    <img src="images/mic-icon.svg" alt="Mic Icon" class="mic-icon" id="mic-icon">
+</div>
+
+<!-- Submit Feedback Button -->
+<button id="submit-feedback-btn" class="main-btn">
+    Submit Feedback 
+    <img src="images/chevron-right.svg" alt="Chevron" class="btn-chevron">
+</button>
+
+</div>
+    <!-- Mobile Navbar -->
+    <div class="navbar">
+        <a href="index.html"><img src="images/Home.svg" alt="Home" class="nav-icon active" id="home-nav"></a> 
+        <img src="images/Listen.svg" alt="Activity" class="nav-icon" id="listen-nav">
+        <img src="images/Analytics.svg" alt="Music" class="nav-icon" id="analytics-nav">
+        <img src="images/Profile.svg" alt="Profile" class="nav-icon" id="profile-nav">
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ml5/0.6.0/ml5.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>

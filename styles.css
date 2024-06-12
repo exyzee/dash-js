@@ -1,0 +1,380 @@
+/* General Page Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden; 
+    background-color: #040028;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page {
+    width: 100%;
+    max-width: 400px;
+    background: #F6F9FF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-height: 100vh; 
+    padding-bottom: 60px; 
+    box-sizing: border-box;
+}
+
+/* Main Button */
+.main-btn {
+    width: 80%; 
+    padding: 15px; 
+    border: none; 
+    border-radius: 30px;
+    background-color: #FF6D25;
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
+}
+
+.main-btn:hover {
+    background-color: #e65a1e;
+}
+
+/* Secondary Button */
+.secondary-btn {
+    width: 80%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: #012354; 
+    color: white;
+    font-size: 18px; 
+    margin-top: 10px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.secondary-btn:hover {
+    background-color: #011b42;
+}
+
+
+/* Header Styling */
+.header {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    background-image: url('images/bg\ clouds.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.suggested-image{
+    width: 80px;
+    height: auto;
+    align-items: center;
+}
+.header h1 {
+    font-size: 24px;
+    color: black;
+    margin: 0;
+}
+
+#start-session-btn {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #042F6E;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.button-icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 2px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.pill-btn {
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #d0d0d0;
+}
+
+.content {
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+    height: calc(100vh - 310px);
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+h2 {
+    font-size: 20px;
+    color: #042F6E;
+    margin-left: 20px;
+}
+
+.activity-list {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.activity-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.emoji-box {
+    background: #F4F7FE;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.activity-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activity-details h3 {
+    margin: 0;
+    font-size: 16px;
+    color: #042F6E;
+}
+
+.activity-details span {
+    font-size: 12px;
+    color: #999;
+}
+
+.activity-details p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Detecting Page Styling */
+.detecting-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.loader-gif {
+    margin: 20px 0;
+    width: 100px;
+    height: 100px;
+}
+
+.loader-gif img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Detected Page Styling */
+.detected-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.suggested-music {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pill-btn {
+    background-color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pill-btn:hover {
+    background-color: #d0d0d0;
+}
+
+/* Feedback Page Styling */
+.feedback-content {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* UI Design Image */
+.ui-design-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+/* Feedback Textbox */
+.feedback-textbox {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+}
+
+.feedback-textbox textarea {
+    width: 100%;
+    height: 60px;
+    border: none;
+    resize: none;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+/* Mic Icon */
+.mic-icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    z-index: 10;
+}
+
+
+.full-screen-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.btn-chevron {
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+/* Mobile Navbar */
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 400px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 169px;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.nav-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.nav-icon.active {
+    filter: none;
+    color: #042F6E;
+}

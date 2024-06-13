@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     const dataArray = new Uint8Array(bufferLength);
                     mic.connect(analyser);
 
-                    const noiseThreshold = 20; // Threshold for noise detection
+                    const noiseThreshold = 70; // Threshold for noise detection
                     const consecutiveNoiseCountThreshold = 10; // Count for avoid false positives
                     let consecutiveNoiseCount = 0;
 
